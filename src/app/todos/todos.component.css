@@ -1,0 +1,31 @@
+div{
+    width: 50rem;
+    background-color: #fff;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+
+#addButton{
+    background-color:rgb(233, 63, 165);
+    margin-top: 10px;
+    width: 100%;
+    padding: 5px;
+    color: white;
+    font-size: 14px;
+    border-radius: 10px;
+    outline: none;
+
+}
+
+#addInput{
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+}
+
+

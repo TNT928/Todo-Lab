@@ -1,0 +1,8 @@
+<div >
+    <h3>Todo List</h3>
+    <filter-bar></filter-bar>
+
+    <todo-item *ngFor="let todo of todos; let i = index;" [id]="i + 1" [todo]= "todo" [todos]= "todos" > </todo-item>
+<input id="addInput"type="text" placeholder="Add to your todo">
+<button  (click)= "addTodo(todo)"id="addButton">Add</button>
+</div>

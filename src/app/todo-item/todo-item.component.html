@@ -1,0 +1,11 @@
+
+<div [ngClass]="setClasses()" > 
+    
+   <p> 
+     {{id}}. 
+       <button *ngIf="!todo.completed" (click)= "onToggle(todo)">Complete</button>
+        {{todo.task}}  
+       <button (click) =removeTodo(todo) class="delete">X</button>
+    </p> 
+</div>
+
