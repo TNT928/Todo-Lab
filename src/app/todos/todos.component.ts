@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, } from '@angular/core';
 import {Todo} from '../models/Todo'
+
+
 
 @Component({
   selector: 'todos',
   templateUrl: './todos.component.html',
   styleUrls: ['./todos.component.css']
 })
+
+
 export class TodosComponent implements OnInit {
 
-  todos:Todo[];
   
+  todos:Todo[];
+  searchText : string;
+
   constructor() { }
 
   ngOnInit() {
@@ -38,6 +44,18 @@ export class TodosComponent implements OnInit {
 
   }
 
+  addTodo(task){
+   
+    this.todos.push({task: task, completed: false})
+   
+  }
+  removeTodo(i) {
+    this.todos.splice(i, 1);
+  }
+
+  setSearchText($event) {
+    this.searchText = $event;
+  }
  
 
   
